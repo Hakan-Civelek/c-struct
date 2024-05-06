@@ -19,5 +19,6 @@ void toString(const Kisi this){
     printf("%s %d %f %f", this->isim, this->yas, this->boy, this->kilo);
 }
 void kisiYoket(Kisi this){
-    if(this != NULL) free(this);
+    if(this == NULL) return;
+    free(this);
 }
