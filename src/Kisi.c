@@ -2,7 +2,7 @@
 
 Kisi kisiOlustur(char* isim, float boy, float kilo){
     Kisi this;
-    this = malloc(sizeof(struct KISI));
+    this = (Kisi)malloc(sizeof(struct KISI));
     this->isim = isim;
     this->boy = boy;
     this->kilo = kilo;
